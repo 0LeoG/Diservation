@@ -17,15 +17,37 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         parkGroup = (RadioGroup)findViewById(R.id.radioGroup);
 
+        // Instantiating RadioButtons
+        MKButton = (RadioButton)findViewById(R.id.MK_rb);
+        EButton = (RadioButton)findViewById(R.id.E_rb);
+        AKButton = (RadioButton)findViewById(R.id.AK_rb);
+        HSButton = (RadioButton)findViewById(R.id.HS_rb);
+
+
     }
 
     public void sendMessage(View view){
-        Intent intent = new Intent(MainActivity.this, MagicKingdom.class);
-        startActivity(intent);
+
+        if(MKButton.isChecked()){
+            Intent intent = new Intent(MainActivity.this, MagicKingdom.class);
+            startActivity(intent);
+        }else if(EButton.isChecked()){
+            Intent intent = new Intent(MainActivity.this, Epcot.class);
+            startActivity(intent);
+        }else if(AKButton.isChecked()){
+            Intent intent = new Intent(MainActivity.this, AnimalKingdom.class);
+            startActivity(intent);
+        }else if(HSButton.isChecked()){
+            Intent intent = new Intent(MainActivity.this, HollywoodStudios.class);
+            startActivity(intent);
+        }
+
+
     }
 }
