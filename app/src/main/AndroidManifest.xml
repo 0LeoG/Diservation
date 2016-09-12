@@ -19,7 +19,9 @@
         <activity android:name=".AnimalKingdom" />
         <activity android:name=".Epcot" />
         <activity android:name=".HollywoodStudios" />
-        <activity android:name=".MagicKingdomTimes"></activity>
+        <activity android:name=".MagicKingdomTimes">
+
+        </activity>
 
     </application>
 

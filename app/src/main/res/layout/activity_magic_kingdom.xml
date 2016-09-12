@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.diservation.ThemeParkAttractions"
-    android:background="#a9aef6">
+    android:background="#a9aef6"
+    android:theme="@android:style/Theme.Material">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -149,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Splash Mountain"
-                    android:id="@+id/sm"
+                    android:id="@+id/smo"
                     android:layout_below="@+id/wdwr"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -222,16 +223,11 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
 
-                <ListView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/listView" />
-
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox16"
+                    android:text="Cinderalla Castle"
+                    android:id="@+id/cc"
                     android:layout_below="@+id/wdwr"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -239,14 +235,14 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox17" />
+                    android:text="Prince Charming Regal Carosel"
+                    android:id="@+id/pcrc" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox18"
+                    android:text="It&apos;s a Small World"
+                    android:id="@+id/iasw"
                     android:layout_below="@+id/cbj"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -254,8 +250,8 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox19"
+                    android:text="Mad Tea Party"
+                    android:id="@+id/mtp"
                     android:layout_below="@+id/wdwr"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -263,14 +259,14 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox20" />
+                    android:text="Mickey&apos;s PhillarMagic"
+                    android:id="@+id/mpm" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox21"
+                    android:text="Peter Pan&apos;s Flight"
+                    android:id="@+id/ppf"
                     android:layout_below="@+id/cbj"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -278,8 +274,8 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox25"
+                    android:text="Brave"
+                    android:id="@+id/brave"
                     android:layout_below="@+id/wdwr"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -287,14 +283,14 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox26" />
+                    android:text="Under the Sea"
+                    android:id="@+id/uts" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox27"
+                    android:text="Ariel&apos;s Grotto"
+                    android:id="@+id/ag"
                     android:layout_below="@+id/cbj"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -302,8 +298,8 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox22"
+                    android:text="Seven Dwarf&apos;s Mine Train"
+                    android:id="@+id/sdmt"
                     android:layout_below="@+id/wdwr"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -311,14 +307,91 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox23" />
+                    android:text="Winnie the Pooh"
+                    android:id="@+id/wtp" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New CheckBox"
-                    android:id="@+id/checkBox24"
+                    android:text="Dumbo the Flying Elephant"
+                    android:id="@+id/dtfe"
+                    android:layout_below="@+id/cbj"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Tomorrow Land"
+                    android:id="@+id/tl"
+                    android:layout_below="@+id/sm"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buzz Lightyear"
+                    android:id="@+id/bl" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monster&apos;s Inc Laugh Floor"
+                    android:id="@+id/milf"
+                    android:layout_below="@+id/cbj"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stitch&apos;s Great Escape"
+                    android:id="@+id/sge"
+                    android:layout_below="@+id/wdwr"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Astro Orbiter"
+                    android:id="@+id/ao" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Space Mountain"
+                    android:id="@+id/sm"
+                    android:layout_below="@+id/cbj"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrowland Speedway"
+                    android:id="@+id/tsw"
+                    android:layout_below="@+id/wdwr"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrowland Transit Authority"
+                    android:id="@+id/tta" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carousel of Progress"
+                    android:id="@+id/cop"
                     android:layout_below="@+id/cbj"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -335,6 +408,7 @@
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="sendMessage"/>
 
 </RelativeLayout>
